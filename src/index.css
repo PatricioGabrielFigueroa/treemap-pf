@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.tooltip {
+  position: absolute; /* Positioning the tooltip relative to the viewport */
+  text-align: center; /* Center-aligning the text inside the tooltip */
+  padding: 8px; /* Adding some padding around the text */
+  font: 12px sans-serif; /* Font size and family */
+  background: rgba(0, 0, 0, 0.6); /* Dark background with some transparency */
+  color: white; /* Text color */
+  border-radius: 4px; /* Rounded corners */
+  pointer-events: none; /* Prevents the tooltip from interfering with mouse events */
+  /* transition: opacity 0.3s; Smooth transition for opacity */
+  opacity: 0; 
+  z-index: 10; /* Ensure the tooltip appears above other elements */
+}
