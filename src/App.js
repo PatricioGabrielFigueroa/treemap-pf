@@ -3,8 +3,9 @@ import * as d3 from 'd3';
 import { useRef, useEffect, useState } from 'react';
 
 function App() {
-
+  // eslint-disable-next-line
   const divRef = useRef(null);
+  // eslint-disable-next-line
   const legendRef = useRef(null);
   const [ currentDataset, setCurrentDataset ] = useState('videogames');
   const [ title, setTitle ] = useState('VIDEO GAME SALES');
@@ -62,7 +63,7 @@ function App() {
     bottom: 30,
     left: 32
   };
-
+  // eslint-disable-next-line
   const innerHeight = height - margin.top - margin.bottom;
   const innerWidth = width - margin.left - margin.right;
 
@@ -178,9 +179,12 @@ function App() {
     });
 
     return () => {
+      // eslint-disable-next-line
       d3.select(divRef.current).select('svg').remove();
+      // eslint-disable-next-line
       d3.select(legendRef.current).select('svg').remove();
-    }
+    }// eslint-disable-next-line
+    // eslint-disable-next-line
   }, [currentDataset]);
 
   return (
